@@ -1,4 +1,4 @@
-tor<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,7 +42,7 @@ $(document).on("click",".del",function() {
 	$("#list"+$(this).attr("id")).hide();
 });
 
-var fileName =  'MyPlaylist.txt';
+var fileName =  'MyPlaylist.m3u';
 
 function downloadInnerHtml(filename, elId, mimeType) {
 	var firstline='#EXTM3U url-tvg="http://botallen.live/epg.xml.gz"';
@@ -123,4 +123,5 @@ document.addEventListener('input', e => {
 <body/>
 
 </html>
+
 
