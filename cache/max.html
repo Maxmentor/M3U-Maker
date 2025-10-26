@@ -4,7 +4,6 @@ tor<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,12 +20,12 @@ var a=0;
 
 $("#add").click(function(){
 a=a+1;
-var oneval='#EXTINF:-1 tvg-id="';
-var twoval='" group-title="';
-var thrval='" tvg-logo="';
-var fourval='",';
+var oneval='*Episode ';
+var twoval=':* ';
+var thrval=' https://maxmentor.github.io/Network_Stream/play.html?max=';
+var fourval='';
 var fiveval='';
-var result='<span>'+oneval+$("#fbox").val()+twoval+$("#sbox").val()+thrval+$("#tbox").val()+fourval+$("#fobox").val()+'<br/>'+$("#fibox").val()+'&nbsp&nbsp<a id="'+a+'" class="del"  href="javascript:void(0)"> ✖&nbsp</a>'+ '</span>';
+var result='<span>'+oneval+$("#fbox").val()+twoval+thrval+$("#tbox").val()+fourval+'<br/>'+'&nbsp&nbsp<a id="'+a+'" class="del"  href="javascript:void(0)"> ✖&nbsp</a>'+ '</span>';
 $('#output').prepend('<li id="list'+a+'" >' + result + '</li>');
 $("input[type=text]").val("");
 });
@@ -45,7 +44,7 @@ $(document).on("click",".del",function() {
 var fileName =  'MyPlaylist.txt';
 
 function downloadInnerHtml(filename, elId, mimeType) {
-	var firstline='"';
+	var firstline='Watch Full Season In 1080P Full HD Hindi <br>';
 	$('#output').prepend('<li>' + firstline+ '</li>'+'<li></li>'+'<li></li>');
 var element = document.getElementById('output');
 const elem = element.querySelectorAll('.del');
@@ -74,13 +73,399 @@ document.addEventListener('input', e => {
   }
 })
 
-</script>
-    <title>WebShow List Maker</title>
 
+
+var s ="";
+
+while (s!= "8115")
+{
+s=prompt("please enter your password");
+if (s=="8115")
+{
+window.location.href="https://maxmentor.github.io/M3U-Maker/cache/max.html; //page to redirect if password entered is correct
+
+  
+}
+else
+{
+alert("Incorrect password-Try again");
+
+}
+}
+
+
+
+</script>
+    <title>Webshow List MAKER</title>
+
+
+    <style>
+
+
+body{
+    font-family: 'IBM Plex Serif', serif;
+     
+   align-items: center;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(247, 242, 236);
+    height: 50px;
+    padding-top: 1rem;
+    bottom: 0%;
+}
+
+
+.footer a {
+
+    border: none;
+    background-color: rgb(247, 242, 236);
+    color: red;
+    font-size: 19px;
+}
+
+.footer a:hover {
+
+    background-color: rgb(247, 242, 236);
+    color: rgb(5, 68, 104);
+  
+}
+
+
+
+nav .list a {
+    background-color:white;
+    color: green;
+      border: .3px solid white;
+      width: 100%;
+      border-radius: .5rem;
+      margin-right: .8rem;
+
+}
+
+nav .list  {
+   
+      margin-right: 1rem;
+
+}
+
+nav .list a:hover {
+    background-color:rgb(223, 219, 219);
+    color: green;
+      border: .3px solid white;
+}
+
+nav {box-shadow: 2px 2px 8px 6px grey;
+
+   width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top:.6rem ;
+    height: 42px;
+    position: fixed;
+    top: 0;
+    background-color: rgb(253, 253, 253);
+    margin-left: -.5rem;
+}
+
+nav h2{
+    margin-top: -.5rem;
+   
+}
+nav .brand {
+    margin-left: .5rem;
+}
+
+div.preview {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    margin-top:-4rem;
+  }
+#output{
+    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: -2rem;
+    width: 85%;
+    text-align: center;
+    margin-left: 4rem;
+    
+  
+    
+}
+li{
+   
+    list-style: none;
+   
+    height: auto;
+    padding-top: .4rem;
+    font-size: 15px;
+    margin-top: .8rem;
+   
+
+}
+
+
+#fbox, #sbox, #tbox, #fobox {
+    width: 40%;
+    height: 30px;
+    border: .5px solid red;
+    margin-top: .8rem;
+    margin-right: 1.5rem;
+    margin-bottom: .6rem; 
+}
+#fibox {
+    width: 83%;
+    height: 30px;
+    border: .5px solid red;
+    margin-top: .8rem;
+    margin-left: -3rem;
+    margin-right: -1.5rem;
+
+}
+a:hover {
+    background-color: rgb(216, 8, 8);
+    cursor: pointer;
+
+}
+
+a{
+    text-decoration: none;
+    width: 40px;
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    text-align: center;
+    border: .2px solid black;
+   
+}
+.card {
+    margin-left: 6.5rem;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    height: 380px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-top: 5rem;
+   
+    
+    
+}
+
+#add {
+    margin-top: .8rem;
+    
+    margin-right: -2.6rem;
+    width: 84%;
+    height: 35px;
+    font-size: 25px;
+    color: white;
+    background-color: red;
+    border: none;
+    margin-top: 1.5rem;
+    margin-left: -4rem;
+}
+
+#add:hover {
+  
+    background-color: rgb(206, 7, 7);
+    cursor: pointer;
+
+}
+
+#downloadLink {
+    width:84%;
+    height: 35px;
+    border: none;
+   background-color: rgb(0, 199, 0);
+   color: white;
+   font-size: 18px;
+   margin-left: -1.5rem;
+  
+}
+
+
+#downloadLink:hover {
+
+    cursor: pointer;
+    background-color:rgb(7, 167, 7) ;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    .card {
+        margin-left: 4rem;
+        align-items: center;
+        text-align: center;
+        width: 85%;
+        height: 380px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.507);
+        transition: 0.3s;
+       
+        
+        
+    }
+
+    #output {
+        margin-left: -.1rem;
+    }
+  }
+
+  @media only screen and (max-width: 1090px) {
+    .card {
+        margin-left: 4rem;
+        align-items: center;
+        text-align: center;
+        width: 85%;
+        height: 380px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.507);
+        transition: 0.3s;
+       
+        
+        
+    }
+
+    #output {
+        margin-left: 1.4rem;
+    }
+  }
+
+  
+@media only screen and (max-width: 750px) {
+    .card {
+        margin-left:3rem;
+        align-items: center;
+        text-align: center;
+        width: 85%;
+        height: 380px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+       
+        
+        
+    }
+#add {
+    width: 89%;
+    margin-left: .2rem;
+    margin-right: .3REM;
+}
+#downloadLink {
+    width: 89%;
+    margin-left: .2rem;
+    margin-right: .3REM;
+}
+
+#output {
+    margin-left: -.09rem;
+}
+  }
+
+
+    
+@media only screen and (max-width: 550px) {
+    .card {
+        margin-left:2rem;
+        align-items: center;
+        text-align: center;
+        width: 85%;
+        height: 380px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+       
+        
+        
+    }
+
+    #fbox, #sbox, #tbox, #fobox  {
+        width: 40%;
+        height: 30px;
+        border: .5px solid red;
+        margin-top: .8rem;
+        margin-left: .8rem;
+        margin-right: .7rem;
+        margin-bottom: .6rem; 
+    }
+
+    #fibox{
+       width: 89%;
+       margin-left: .5rem;
+       margin-right: .5REM;
+    }
+
+    #output {
+        margin-left: -.5rem;
+    }
+  }
+  
+
+    
+@media only screen and (max-width: 390px) {
+    .card {
+        margin-top: 4rem;
+        margin-left:1rem;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        height: 430px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+       
+        
+        
+    }
+
+   .brand {
+        margin-top: .4rem;
+    }
+
+.footer{
+	margin-top:3.2rem;
+	
+	}
+    #fbox, #sbox, #tbox, #fobox  {
+        width: 80%;
+        height: 30px;
+        border: .5px solid red;
+        margin-top: .8rem;
+        margin-left: .8rem;
+        margin-right: .7rem;
+        margin-bottom: .6rem; 
+    }
+
+    #fibox{
+       width: 80%;
+       margin-left: .5rem;
+       margin-right: .5REM;
+    }
+
+    #output {
+        
+        margin-left: -.5rem;
+        margin-top: .5rem;
+    }
+#downloadLink {
+	margin-top:.7rem;
+	}
+	
+    li{
+        margin-top: 1rem;
+        width:93% ;
+    }
+  }
+  
+  
+
+
+</style>
 </head>
 <body>
    <nav>
-       <div class="brand"><h2>Series Season List Maker</h2></div>
+       <div class="brand"><h2>WebShow List Maker</h2></div>
        <div class="list"><a href="https://t.me/maxmentor"><i class="fa fa-telegram" style="font-size:33px;color:rgb(26, 180, 252)"></i></a>
        
        </div>
@@ -91,13 +476,11 @@ document.addEventListener('input', e => {
 
 <div class="card">
 <br>
-<h3>M3U Maker By MaxMentor</h3>
-<input type="text" id="fbox" placeholder="Stream Player" value="https://maxmentor.github.io/Network_Stream/play.html?max=">
+<h3>Webshow list By MaxMentor</h3>
+<input type="text" id="fbox" placeholder="Episode No." >
 <input type="text" id="tbox" placeholder="Stream Link">
 <br>
-<!-- <input type="text" id="sbox" placeholder="Group Title">
-<input type="text" id="fobox" placeholder="Channel Name"><br>
-<input type="text" id="fibox" placeholder="Url"><br> -->
+
 <input type="button" value="+" id="add" class=".add"><br>
 <br><input type="button" value="Download M3U" id="downloadLink">
 
